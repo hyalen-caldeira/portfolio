@@ -1,0 +1,280 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Hyalen</title>
+<meta name="keywords" content="Java, JEE, Object Relational, HTML 5, CSS 3, ...">
+<meta name="description" content="I am a Software Engineer ...">
+<meta name="author" content="Hyalen Moreira">
+
+<!-- Bootstrap Core CSS -->
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+<!-- Fonts -->
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+
+<!-- Custom Theme CSS -->
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Badge GOTD -->
+    <!-- ./ Badge GOTD -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    <span class="light">Hyalen</span> Moreira
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Who I am</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- animazione -->
+                        <div id="animazione" style="display: block; margin-top: 20%;">
+                           <!-- img src="img/logo-white-4.png" alt="" -->
+                           <h1 class="brand-heading top20">Hyalen Moreira</h1>
+                           <p class="intro-text">Software Engineer <span class="hid">freelance</span> &amp; Full Stack Web Developer<br><small><strong>- EST. 2012 -</strong></small></p>
+                           <div class="page-scroll">
+                            <a href="#portfolio" class="btn btn-circle">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- / animazione -->
+        </div>
+    </section>
+    <section id="portfolio" class="container content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>
+                        <span class="rosso">.</span>Portfolio
+                    </h2>
+                    <p>Alcuni degli ultimi lavori che ho selezionato.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/icon-timer.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row"></div>
+        </div>
+    </section>
+    <section id="about" class="container content-section text-center"></section>
+    <section id="contact" class="container content-section text-center"></section>
+    <section id="footer" class="content-section text-center"></section>
+
+
+<!-- Core JavaScript Files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/grayscale.js"></script>
+<!--script src="js/jquery.scrolly.js"></script-->
+
+
+<!--script>
+    (function($){
+        $.fn.percentPie = function(options){
+
+            var settings = $.extend({
+                width: 100,
+                trackColor: "EEEEEE",
+                barColor: "777777",
+                barWeight: 30,
+                startPercent: 0,
+                endPercent: 1,
+                fps: 60
+            }, options);
+
+            this.css({
+                width: settings.width,
+                height: settings.width
+            });
+
+            var that = this,
+            hoverPolice = false,
+            canvasWidth = settings.width,
+            canvasHeight = canvasWidth,
+            id = $('canvas').length,
+            canvasElement = $('<canvas id="'+ id +'" width="' + canvasWidth + '" height="' + canvasHeight + '"></canvas>'),
+            canvas = canvasElement.get(0).getContext("2d"),
+            centerX = canvasWidth/2,
+            centerY = canvasHeight/2,
+            radius = settings.width/2 - settings.barWeight/2;
+            counterClockwise = false,
+            fps = 1000 / settings.fps,
+            update = .01;
+            this.angle = settings.startPercent;
+
+            this.drawArc = function(startAngle, percentFilled, color){
+                var drawingArc = true;
+                canvas.beginPath();
+                canvas.arc(centerX, centerY, radius, (Math.PI/180)*(startAngle * 360 - 90), (Math.PI/180)*(percentFilled * 360 - 90), counterClockwise);
+                canvas.strokeStyle = color;
+                canvas.lineWidth = settings.barWeight;
+                canvas.stroke();
+                drawingArc = false;
+            }
+
+            this.fillChart = function(stop){
+                var loop = setInterval(function(){
+                    hoverPolice = true;
+                    canvas.clearRect(0, 0, canvasWidth, canvasHeight);
+
+                    that.drawArc(0, 360, settings.trackColor);
+                    that.angle += update;
+                    that.drawArc(settings.startPercent, that.angle, settings.barColor);
+
+                    if(that.angle > stop){
+                        clearInterval(loop);
+                        hoverPolice = false;
+                    }
+                }, fps);
+            }
+
+            this.mouseover(function(){
+                if(hoverPolice == false){
+                    that.angle = settings.startPercent;
+                    that.fillChart(settings.endPercent);
+                }
+            });
+
+            this.fillChart(settings.endPercent);
+            this.append(canvasElement);
+            return this;
+        }
+    }(jQuery));
+
+    $(document).ready(function() {
+
+        $('.webdesign').percentPie({
+            width: 200,
+            trackColor: "d6d6d6",
+            barColor: "e74c3c",
+            barWeight: 20,
+            endPercent: .9,
+            fps: 60
+        });
+
+        $('.icondesign').percentPie({
+            width: 200,
+            trackColor: "d6d6d6",
+            barColor: "3498db",
+            barWeight: 20,
+            endPercent: .75,
+            fps: 60
+        });
+
+        $('.uidesign').percentPie({
+            width: 200,
+            trackColor: "d6d6d6",
+            barColor: "60DB5C",
+            barWeight: 20,
+            endPercent: .6,
+            fps: 60
+        });
+
+    });
+</script>
+
+
+
+<script>
+
+    $('#animazione').animate({
+        marginTop: '20%',
+        opacity:"show"
+    }, 1500, function() {
+        // Animation complete.
+        $('.frecciaDown').animate({
+
+            opacity:"show"
+        }, 800);
+    });
+
+
+</script>
+
+<script>
+   $(window).scroll(function() {
+     if($(window).scrollTop() + $(window).height() == $(document).height()) {
+         $('#animazione-footer').animate({
+             marginTop: '-5px',
+             opacity:"show"
+         }, 800);
+     }
+ });
+</script>
+
+
+
+<script>
+    $(window).scroll(function() {
+
+
+        if ($(this).scrollTop()>0)
+        {
+
+            $(".fade2").animate({opacity:"show"}, 2000);
+
+        }
+        else
+        {
+
+          $('.fade2').fadeOut();
+
+      }
+  });
+</script>
+
+<script>
+    $(document).ready(function(){
+     $('.parallax').scrolly({bgParallax: true});
+ });
+    </script-->
+</body>
+</html>
