@@ -161,14 +161,24 @@ x:-o-prefocus, hr3:after {
 	color: #fff!important;
 }
 
-.twitter-color {
+.linkedin-color {
 	color: #63B3FF!important;
 	border-color: #63B3FF!important;
 }
 
-.twitter-color:hover {
+.linkedin-color:hover {
 	background-color: #63B3FF!important;
 	color: #fff!important;
+}
+
+.github-color {
+  color: #607D8B!important;
+  border-color: #607D8B!important;
+}
+
+.github-color:hover {
+  background-color: #607D8B!important;
+  color: #fff!important;
 }
 
 .rosso {
