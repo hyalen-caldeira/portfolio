@@ -233,19 +233,12 @@ color: #e74c3c;
     height: 200px;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-
-
-
     -webkit-box-shadow: 0px 0px 19px 0px rgba(50, 50, 50, 0.45);
     -moz-box-shadow:    0px 0px 19px 0px rgba(50, 50, 50, 0.45);
     box-shadow:         0px 0px 19px 0px rgba(50, 50, 50, 0.45);
 }
 
 .ball {
-
-
-
-
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -254,7 +247,7 @@ color: #e74c3c;
   -moz-animation: bounce 1.2s;
   -moz-animation-delay: 0.5s;
   animation: bounce 1.2s;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 
 .ball:hover {
@@ -435,6 +428,10 @@ a:focus {
 .navbar-toggle:focus,
 .navbar-toggle:active {
     outline: 0;
+}
+
+.under-construction {
+  opacity: 0.25;
 }
 
 @media(min-width:767px) {
