@@ -369,6 +369,13 @@ color: #e74c3c;
     }
 }
 
+li strong {
+    color: #e74c3c !important;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
 a {
     color: #e74c3c;
     -webkit-transition: all .2s ease-in-out;
