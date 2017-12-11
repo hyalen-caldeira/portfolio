@@ -1,0 +1,558 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Hyalen</title>
+<meta name="keywords" content="Java, JEE, Object Relational, HTML 5, CSS 3, ...">
+<meta name="description" content="I am a Software Engineer ...">
+<meta name="author" content="Hyalen Moreira">
+
+<!-- Bootstrap Core CSS -->
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+<!-- Fonts -->
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+
+<!-- Custom Theme CSS -->
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Badge GOTD -->
+    <!-- ./ Badge GOTD -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    <span class="light">Hyalen</span> Moreira
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Who I am</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- animazione -->
+                        <div id="animazione" style="display: block; margin-top: 20%;">
+                           <!-- img src="img/logo-white-4.png" alt="" -->
+                           <h1 class="brand-heading top20">Hyalen Moreira</h1>
+                           <p class="intro-text">Software Engineer <span class="hid">freelance</span> &amp; Full Stack Web Developer<br><small><strong>- EST. 2017 -</strong></small></p>
+                           <div class="page-scroll">
+                                <a href="#portfolio" class="btn btn-circle">
+                                    <i class="fa fa-angle-double-down animated" style="padding-top: 6px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- / animazione -->
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="container content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>
+                        <span class="rosso">.</span>Portfolio
+                    </h2>
+                    <p>Some of the most recent projects I've selected.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/portfolio.png" class="img-responsive" alt="Portfolio">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/resume.png" class="img-responsive" alt="Responsive Resume">
+                    </a>
+                </div>
+                <!-- -------------- -->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/resume.png" class="img-responsive" alt="Responsive Resume">
+                    </a>
+                </div>
+                <!-- -------------- -->
+                <!-- <div class="col-sm-4 portfolio-item">
+                    <img src="images/icon-timer.png" class="img-responsive under-construction" alt="">
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <img src="images/icon-timer.png" class="img-responsive under-construction" alt="">
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <img src="images/icon-timer.png" class="img-responsive under-construction" alt="">
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <img src="images/icon-timer.png" class="img-responsive under-construction" alt="">
+                </div>
+            </div>
+            <!--div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/icon-timer.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/icon-timer.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/icon-timer.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div -->
+        </div>
+    </section>
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12">
+            <p class="fade2" style="display: block;"><img class="about-avatar ball" src="images/hyalen.jpg" alt=""></p>
+                <h2><span class="rosso">.</span>About Me</h2>
+                <div class="justify">
+                    <p><span>Software Engineer</span> with 15+ years of experience, I have both <span>Back-End</span> and <span>Front-End</span> software development experience. I enjoy developing software from the ground up, learning new technologies, refactoring legacy code and making the companies, where I've been working on, satisfied.</p>
+
+<<<<<<< HEAD
+                    <p>Currently I'm working as <span>Software Engineer</span> at <span>Conversant</span> writing code in an <span>agile</span> environment for an online <span>Ad Network</span> company’s <span>Java API</span>, adding server-side support for new SaaS UI features, addressing bug tickets in legacy ETL system with a focus on <span>Test-Driven-Development</span> and delivering quality projects that have been well-received.</p>                    
+
+                    <p>Before that I was working as <span>Software Engineer</span> at <span>B2W Digital</span> responsible for designing and implementing solutions for <span>integration</span>, financial and government applications, as well as researching and suggesting new tools, <span>algorithms</span> and solutions to increase system quality. I also serve as part of a <span>Back-End</span> integration team for the <span>eCommerce</span> systems.</p>
+
+                    <p>I have global experience across different companies designing and developing applications using
+                    <span>Java, Hibernate, Spring, React, AWS, JAX-RS, JAX-WS, SQL, OOD</span> and others. I hold a degree in <span>Software Engineer</span> from UFMG - Universidade Federal de Minas Gerais. </p>
+=======
+                    <p>Currently I'm working as <span>Software Engineer</span> at <span>Conversant</span> writing code in an <span>agile</span> environment for an online Ad Network company’s <span>Java API</span>, adding server-side support for new SaaS UI features, addressing bug tickets in legacy ETL system with a focus on <span>Test-Driven-Development</span> and delivering quality projects that have been well-received.</p>                    
+
+                    <p>Before that I was working as <span>Software Engineer</span> at <span>B2W Digital</span> responsible for designing and implementing solutions for integration, financial and government applications, as well as researching and suggesting new tools, algorithms and solutions to increase system quality. I also serve as part of a <span>Back-End</span> integration team for the eCommerce systems.</p>
+
+                    <p>I have global experience across different companies designing and developing applications using
+                    <span> Java, Hibernate, Spring, React, AWS, JAX-RS, JAX-WS, SQL, OOD and others.</span> I hold a degree in <span>Software Engineer</span> from UFMG - Universidade Federal de Minas Gerais. </p>
+>>>>>>> 97faf16c54d080f3ccf3999fa25231ec16f827c3
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-12 ">
+
+                    <h2><span class="rosso">.</span>Companies to Collaborate</h2>
+                    <div class="row top100">
+                        <!--div class="col-md-3">
+                            <img src="" alt="">
+                        </div-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2><span class="rosso">.</span>How to contact me</h2>
+                <p>For business contacts, collaborations, quotes or just to say "hello" write to:</p>
+                <h4>hyalen.moreira@gmail.com</h4>
+                <p><small>You can also find me on:</small></p>
+                <ul class="list-inline banner-social-buttons">
+                    <li><a href="https://github.com/hyalen-moreira" target="_blank" class="btn btn-default btn-lg github-color"><i class="fa fa-github fa-fw"></i> <span class="network-name">GitHub</span></a>
+                    </li>
+
+                    <li><a href="https://www.linkedin.com/in/hyalen/" target="_blank" class="btn btn-default btn-lg linkedin-color"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+                    </li>
+
+                    <li><a href="https://www.facebook.com/hyalen.caldeira" target="_blank" class="btn btn-default btn-lg facebook-color"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+
+                    <li><a href="https://plus.google.com/+HyalenMoreira" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="footer" class="content-section text-center">
+        <div class="footer-section">
+            <div class="container">
+                <div class="col-lg-12 ">
+
+                   <div id="animazione-footer" style="display: block; margin-top: -5px;">
+                    <img src="" alt="">
+                       <br><br><br>
+                       <p><small>Hyalen Moreira, Los Angeles CA - Phone +1 909 234 7007 <a href="#">Privacy</a> - <a href="#">Cookie Policy</a></small></p>
+                       <p><small><small>Dedicated to my children Hyalen, Iago, Igor and Nicole<i class="glyphicon glyphicon-heart rosso"></i></small></small></p>
+                   </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section id="about" class="container content-section text-center"></section>
+    <section id="contact" class="container content-section text-center"></section>
+    <section id="footer" class="content-section text-center"></section-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Portfolio Site</h2>
+                            <hr class="star-primary">
+                            <a href="index.html">
+                                <img src="images/portfolio2.png" class="img-responsive img-centered" alt="Responsive Portifolio Image">
+                            </a>
+                            <p>In this project, hosted at <strong>Amazon Web Service</strong>, I was provided with a design mockup as a PDF-file and had to replicate that design in <strong>HTML</strong> and <strong>CSS</strong>. I've developed a <strong>responsive</strong> website that display images, descriptions and links to each of the projects listed in portfolio.</p>
+
+                            <p>
+                            To complete the project I've used <strong>HTML5, CSS3, Bootstrap</strong> and <strong>  JavaScript.</strong> I've also Installed and configured <strong>Linux (Ubuntu), Apache, Vagrant</strong> and <strong>Virtualbox</strong>.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Project: <strong><a href="index.html">Portolio Site</a></strong>
+                                </li>
+                                <li>Cliente: <strong>Hyalen Moreira</strong>
+                                </li>
+                                <li>Data: <strong>2017</strong>
+                                </li>
+                                <li>Role: <strong>Front End Web Developer</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Interactive Online Resume</h2>
+                            <hr class="star-primary">
+                            <a href="../resume/index.html" target="_blank">
+                                <img src="images/resume2.png" class="img-responsive img-centered" alt="Responsive Resume Image">
+                            </a>
+                            <p>In this project, I have built an online resume using <strong>HTML5, CSS3, JavaScript, Bootstrap</strong> and <strong>jQuery.</strong></p>
+
+                            <p>
+                            The goal was to transform a static web pages into dynamic applications. I have used variables, data structures, conditional statements, loops, and function in <strong>JavaScript</strong> as well as the core features of <strong>jQuery</strong> to manipulate the DOM.
+                            </p>
+
+                            <p>I have also made sure that the page is fully <strong>responsive</strong>.</p>
+                            <ul class="list-inline item-details">
+                                <li>Project: <strong><a href="../resume/index.html" target="_blank">Interactive Online Resume</a></strong>
+                                </li>
+                                <li>Cliente: <strong>Hyalen Moreira</strong>
+                                </li>
+                                <li>Data: <strong>2017</strong>
+                                </li>
+                                <li>Role: <strong>Front End Web Developer</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------- -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>React, Redux & React Native</h2>
+                            <hr class="star-primary">
+                            <a href="../resume/index.html" target="_blank">
+                                <img src="images/resume2.png" class="img-responsive img-centered" alt="Responsive Resume Image">
+                            </a>
+                            <p>In this project, I have built an online resume using <strong>HTML5, CSS3, JavaScript, Bootstrap</strong> and <strong>jQuery.</strong></p>
+
+                            <p>
+                            The goal was to transform a static web pages into dynamic applications. I have used variables, data structures, conditional statements, loops, and function in <strong>JavaScript</strong> as well as the core features of <strong>jQuery</strong> to manipulate the DOM.
+                            </p>
+
+                            <p>I have also made sure that the page is fully <strong>responsive</strong>.</p>
+                            <ul class="list-inline item-details">
+                                <!-- <li>Project: <strong><a href="../resume/index.html" target="_blank">Interactive Online Resume</a></strong>
+                                </li> -->
+                                <li>Projects: 
+                                    <strong><a href="../resume/index.html" target="_blank">React Fundamentals</a></strong>,
+                                    <strong><a href="../resume/index.html" target="_blank">React&Redux</a></strong>
+                                    and <strong><a href="../resume/index.html" target="_blank">React Native</a></strong>
+                                </li><br>
+                                <li>Cliente: <strong>Hyalen Moreira</strong>
+                                </li>
+                                <li>Data: <strong>2017</strong>
+                                </li>
+                                <li>Role: <strong>React Developer</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------- -->
+<!-- Core JavaScript Files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/grayscale.js"></script>
+<!--script src="js/jquery.scrolly.js"></script-->
+
+
+<!--script>
+    (function($){
+        $.fn.percentPie = function(options){
+
+            var settings = $.extend({
+                width: 100,
+                trackColor: "EEEEEE",
+                barColor: "777777",
+                barWeight: 30,
+                startPercent: 0,
+                endPercent: 1,
+                fps: 60
+            }, options);
+
+            this.css({
+                width: settings.width,
+                height: settings.width
+            });
+
+            var that = this,
+            hoverPolice = false,
+            canvasWidth = settings.width,
+            canvasHeight = canvasWidth,
+            id = $('canvas').length,
+            canvasElement = $('<canvas id="'+ id +'" width="' + canvasWidth + '" height="' + canvasHeight + '"></canvas>'),
+            canvas = canvasElement.get(0).getContext("2d"),
+            centerX = canvasWidth/2,
+            centerY = canvasHeight/2,
+            radius = settings.width/2 - settings.barWeight/2;
+            counterClockwise = false,
+            fps = 1000 / settings.fps,
+            update = .01;
+            this.angle = settings.startPercent;
+
+            this.drawArc = function(startAngle, percentFilled, color){
+                var drawingArc = true;
+                canvas.beginPath();
+                canvas.arc(centerX, centerY, radius, (Math.PI/180)*(startAngle * 360 - 90), (Math.PI/180)*(percentFilled * 360 - 90), counterClockwise);
+                canvas.strokeStyle = color;
+                canvas.lineWidth = settings.barWeight;
+                canvas.stroke();
+                drawingArc = false;
+            }
+
+            this.fillChart = function(stop){
+                var loop = setInterval(function(){
+                    hoverPolice = true;
+                    canvas.clearRect(0, 0, canvasWidth, canvasHeight);
+
+                    that.drawArc(0, 360, settings.trackColor);
+                    that.angle += update;
+                    that.drawArc(settings.startPercent, that.angle, settings.barColor);
+
+                    if(that.angle > stop){
+                        clearInterval(loop);
+                        hoverPolice = false;
+                    }
+                }, fps);
+            }
+
+            this.mouseover(function(){
+                if(hoverPolice == false){
+                    that.angle = settings.startPercent;
+                    that.fillChart(settings.endPercent);
+                }
+            });
+
+            this.fillChart(settings.endPercent);
+            this.append(canvasElement);
+            return this;
+        }
+    }(jQuery));
+
+    $(document).ready(function() {
+
+        $('.webdesign').percentPie({
+            width: 200,
+            trackColor: "d6d6d6",
+            barColor: "e74c3c",
+            barWeight: 20,
+            endPercent: .9,
+            fps: 60
+        });
+
+        $('.icondesign').percentPie({
+            width: 200,
+            trackColor: "d6d6d6",
+            barColor: "3498db",
+            barWeight: 20,
+            endPercent: .75,
+            fps: 60
+        });
+
+        $('.uidesign').percentPie({
+            width: 200,
+            trackColor: "d6d6d6",
+            barColor: "60DB5C",
+            barWeight: 20,
+            endPercent: .6,
+            fps: 60
+        });
+
+    });
+</script>
+
+
+
+<script>
+
+    $('#animazione').animate({
+        marginTop: '20%',
+        opacity:"show"
+    }, 1500, function() {
+        // Animation complete.
+        $('.frecciaDown').animate({
+
+            opacity:"show"
+        }, 800);
+    });
+
+
+</script>
+
+<script>
+   $(window).scroll(function() {
+     if($(window).scrollTop() + $(window).height() == $(document).height()) {
+         $('#animazione-footer').animate({
+             marginTop: '-5px',
+             opacity:"show"
+         }, 800);
+     }
+ });
+</script>
+
+
+
+<script>
+    $(window).scroll(function() {
+
+
+        if ($(this).scrollTop()>0)
+        {
+
+            $(".fade2").animate({opacity:"show"}, 2000);
+
+        }
+        else
+        {
+
+          $('.fade2').fadeOut();
+
+      }
+  });
+</script>
+
+<script>
+    $(document).ready(function(){
+     $('.parallax').scrolly({bgParallax: true});
+ });
+    </script-->
+</body>
+</html>
