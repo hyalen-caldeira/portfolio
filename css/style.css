@@ -13,6 +13,11 @@ html {
     height: 100%;
 }
 
+.landscape {
+    height: 260px;
+    width: 360px;
+}
+
 h1,
 h2,
 h3,
