@@ -18,6 +18,12 @@ html {
     width: 360px;
 }
 
+.landscape-modal {
+    height: 350px;
+    width: 625px;
+    margin:auto;
+}
+
 h1,
 h2,
 h3,
