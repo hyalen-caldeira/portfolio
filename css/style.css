@@ -448,7 +448,7 @@ a:focus {
 }
 
 .under-construction {
-  opacity: 0.25;
+  opacity: 0.20;
 }
 
 @media(min-width:767px) {
