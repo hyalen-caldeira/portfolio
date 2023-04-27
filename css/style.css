@@ -750,9 +750,9 @@ body {
     height: 100%;
     opacity: 0;
     background: rgba(231,76,60,.9);
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
+    -webkit-transition: all ease .65s;
+    -moz-transition: all ease .65s;
+    transition: all ease .65s;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
