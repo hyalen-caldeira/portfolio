@@ -19,8 +19,9 @@ html {
 }
 
 .landscape-modal {
-    height: 350px;
-    width: 625px;
+    height: auto;
+    width: 100%;
+    max-width: 625px;
     margin:auto;
 }
 
@@ -619,7 +620,8 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
     position: relative;
-    height: 550px;
+    min-height: 550px;
+    height: auto;
 }
 
 .footer-section {
@@ -627,7 +629,8 @@ a:focus {
     padding: 50px 0;
     color: #fff;
     background: url(../images/footer.jpg) repeat center;
-    height: 450px;
+    min-height: 450px;
+    height: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
