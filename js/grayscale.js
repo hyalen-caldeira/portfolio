@@ -5,6 +5,22 @@ $(window).scroll(function() {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
+
+    // Trigger bounce animation when avatar scrolls into view
+    var $ball = $('.ball');
+    if ($ball.length && !$ball.hasClass('animate')) {
+        var elementTop = $ball.offset().top;
+        var elementBottom = elementTop + $ball.outerHeight();
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+
+        if (elementBottom > viewportTop && elementTop < viewportBottom) {
+            $ball.parent('.fade2').css('opacity', '1');
+            setTimeout(function() {
+                $ball.addClass('animate');
+            }, 1000);
+        }
+    }
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
