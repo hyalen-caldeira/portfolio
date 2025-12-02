@@ -197,7 +197,7 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-12">
-                <p class="fade2" style="display: block;">
+                <p class="fade2">
                     <img class="about-avatar ball" src="images/hyalen.jpg" alt="">
                 </p>
                 <h2>
@@ -858,22 +858,34 @@
 
 
     <script>
-        $(window).scroll(function() {
-
-
-            if ($(this).scrollTop()>0)
-            {
-
-                $(".fade2").animate({opacity:"show"}, 2000);
-
+        $(document).ready(function() {
+            function checkAboutSectionVisibility() {
+                var aboutSection = $('#about');
+                if (aboutSection.length === 0) return; // Safety check
+                
+                var windowTop = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                var aboutTop = aboutSection.offset().top;
+                
+                // Start showing when we're within 300px of the about section
+                var triggerPoint = aboutTop - windowHeight + 300;
+                
+                // Check if we've scrolled to or past the trigger point
+                if (windowTop >= triggerPoint) {
+                    // Section is visible or approaching, fade in the image
+                    $(".fade2").stop(true, false).fadeTo(2000, 1);
+                } else {
+                    // We haven't reached the section yet, keep it hidden
+                    $('.fade2').stop(true, false).fadeTo(800, 0);
+                }
             }
-            else
-            {
-
-            $('.fade2').fadeOut();
-
-        }
-    });
+            
+            // Run immediately on page load
+            checkAboutSectionVisibility();
+            
+            // Run on scroll
+            $(window).on('scroll', checkAboutSectionVisibility);
+        });
     </script>
 
     <script>
