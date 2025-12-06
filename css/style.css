@@ -726,6 +726,10 @@ a:focus {
     #contact.content-section {
         padding-top: 60px;
     }
+
+    #about .fade2 {
+        opacity: 1 !important;
+    }
 }
 
 .footer-section {
