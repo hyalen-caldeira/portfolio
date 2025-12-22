@@ -687,6 +687,11 @@ a:focus {
     width: 100%;
 }
 
+#portfolio .portfolio-item img.w-100 {
+    height: 264px;
+    object-fit: cover;
+}
+
 .content-section {
     padding-top: 100px;
 }
