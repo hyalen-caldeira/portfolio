@@ -708,33 +708,55 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>COBOL Reverse Engineering Platform</h2>
+                            <h2>AI-Driven COBOL Reverse Engineering Platform</h2>
                             <hr class="star-primary">
                             <a href="https://github.com/hyalen-caldeira" target="_blank">
                                 <img src="images/cobol-ai.png" class="img-responsive img-centered"
-                                    alt="COBOL Reverse Engineering Platform">
+                                    alt="AI-Driven COBOL Reverse Engineering Platform">
                             </a>
-                            <p>
-                                A public, source-available platform for reverse engineering enterprise
-                                <strong>COBOL</strong> applications. This project was developed independently,
-                                in parallel with my professional work, combining multiple advanced techniques
-                                to analyze and understand legacy mainframe codebases.
+                            <p style="font-size: 18px; line-height: 1.5;">
+                                Architected and implemented an <strong>AI-Powered</strong> platform for reverse engineering legacy
+                                <strong>COBOL</strong> systems into structured, analyzable representations, bridging
+                                compiler theory with modern agent-based <strong>AI Architectures</strong>. This project is developed
+                                independently, outside of my employment and client responsibilities.
                             </p>
 
                             <p>
-                                The platform leverages <strong>Compiler Theory</strong> to parse and understand
-                                COBOL syntax and semantics, <strong>Graph-Based Program Analysis</strong> to map
-                                control flow, data dependencies, and call hierarchies, and selectively orchestrated
-                                <strong>LLM Workflows</strong> to generate human-readable documentation and insights
-                                from complex legacy code.
+                                <ul class="text-left" style="font-size: 18px; line-height: 1.5;">
+                                    <li>Built compiler-style analysis pipelines (<strong>AST</strong>, <strong>ASG</strong>,
+                                        <strong>CFG</strong>, <strong>DFG</strong>, <strong>PDG</strong>) to extract
+                                        deterministic program structure and semantics;</li>
+                                    <li>Designed graph-based representations for cross-program dependency analysis and
+                                        system-level understanding;</li>
+                                    <li>Implemented agent-driven workflows using <strong>LangGraph</strong> to orchestrate
+                                        multi-step analysis and reasoning pipelines;</li>
+                                    <li>Integrated <strong>LangChain</strong> for controlled <strong>LLM</strong> interactions, enabling
+                                        selective AI usage while preserving cost efficiency and determinism;</li>
+                                    <li>Designed and implemented an <strong>MCP-based</strong> modular tooling architecture,
+                                        enabling scalable tool execution, and future extensibility;</li>
+                                    <li>Added enterprise-grade observability and execution metadata (timing, runs, errors)
+                                        to support debugging and operational insights.</li>
+                                </ul>
                             </p>
 
-                            <p>
-                                This tool addresses a critical need in enterprise modernization: understanding
-                                decades-old COBOL systems that power mission-critical business processes in
-                                banking, insurance, and government sectors.
+                            <p style="font-size: 18px; line-height: 1.5;">
+                                The platform combines <strong>Compiler Theory</strong>, <strong>Graph-Based Program
+                                Analysis</strong>, and selectively orchestrated <strong>LLM Workflows</strong>, and is
+                                exposed via <strong>Model Context Protocol (MCP)</strong> servers consumable by
+                                MCP-compatible clients such as <strong>Cursor</strong> and <strong>Claude</strong>.
                             </p>
-                            <ul class="list-inline item-details">
+
+                            <div class="text-left top20" style="font-size: 18px; line-height: 1.5;">
+                                <strong>MCP Endpoints:</strong>
+                                <ul>
+                                    <li>MCP Server (HTTP transport): <a href="http://mcp.hyalen.us:8003/mcp" target="_blank">http://mcp.hyalen.us:8003/mcp</a></li>
+                                    <li>MCP Server (SSE transport): <a href="http://mcp.hyalen.us:8001/sse" target="_blank">http://mcp.hyalen.us:8001/sse</a></li>
+                                    <li>Health: <a href="http://mcp.hyalen.us:9090/health" target="_blank">http://mcp.hyalen.us:9090/health</a></li>
+                                    <li>Prometheus Metrics: <a href="http://mcp.hyalen.us:9090/metrics" target="_blank">http://mcp.hyalen.us:9090/metrics</a></li>
+                                </ul>
+                            </div>
+
+                            <ul class="list-inline item-details top20" style="font-size: 18px; line-height: 1.5;">
                                 <li>Project:
                                     <strong>
                                         <a href="https://github.com/hyalen-caldeira" target="_blank"
@@ -746,7 +768,7 @@
                                     <strong>Independent Project</strong>
                                 </li>
                                 <li>Date:
-                                    <strong>2024</strong>
+                                    <strong>2025-2026</strong>
                                 </li>
                                 <li>Role:
                                     <strong>AI Architect & Developer</strong>
