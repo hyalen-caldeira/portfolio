@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1830"/>
+      <stop offset="1" stop-color="#050a18"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff9900" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ff9900" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hubGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffedd5"/>
+      <stop offset="1" stop-color="#c2410c"/>
+    </radialGradient>
+    <g id="hex">
+      <polygon points="70,0 35,60 -35,60 -70,0 -35,-60 35,-60" fill="#13203d" stroke="#ff9900" stroke-width="2"/>
+    </g>
+    <g id="hexFill">
+      <polygon points="70,0 35,60 -35,60 -70,0 -35,-60 35,-60" fill="url(#hubGrad)" stroke="#ffb84d" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <g stroke="#ff9900" stroke-width="0.5" opacity="0.08">
+    <path d="M0 256H1536M0 512H1536M0 768H1536"/>
+    <path d="M256 0V1024M512 0V1024M768 0V1024M1024 0V1024M1280 0V1024"/>
+  </g>
+
+  <g font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14" fill="#ff9900" opacity="0.34">
+    <text x="60" y="160">remote_state {</text>
+    <text x="60" y="188">  backend = "s3"</text>
+    <text x="60" y="216">  config = {</text>
+    <text x="60" y="244">    bucket  = "tf-state"</text>
+    <text x="60" y="272">    dynamodb_table = "locks"</text>
+    <text x="60" y="300">    region  = "us-east-1"</text>
+    <text x="60" y="328">  }</text>
+    <text x="60" y="356">}</text>
+    <text x="60" y="408">terraform {</text>
+    <text x="60" y="436">  source = "../../modules/ec2"</text>
+    <text x="60" y="464">}</text>
+    <text x="60" y="516">inputs = {</text>
+    <text x="60" y="544">  ami        = "ami-..."</text>
+    <text x="60" y="572">  elastic_ip = true</text>
+    <text x="60" y="600">  route53    = "mcp.hyalen.us"</text>
+    <text x="60" y="628">}</text>
+  </g>
+
+  <g transform="translate(1080,470)">
+    <circle cx="0" cy="0" r="320" fill="url(#halo)"/>
+
+    <g stroke="#ffb84d" stroke-width="2" opacity="0.75">
+      <line x1="0" y1="-260" x2="-185" y2="-130"/>
+      <line x1="0" y1="-260" x2="185" y2="-130"/>
+      <line x1="-185" y1="-130" x2="0" y2="0"/>
+      <line x1="185" y1="-130" x2="0" y2="0"/>
+      <line x1="0" y1="0" x2="-185" y2="130"/>
+      <line x1="0" y1="0" x2="185" y2="130"/>
+      <line x1="-185" y1="130" x2="0" y2="260"/>
+      <line x1="185" y1="130" x2="0" y2="260"/>
+      <line x1="-185" y1="-130" x2="-185" y2="130"/>
+      <line x1="185" y1="-130" x2="185" y2="130"/>
+    </g>
+
+    <use href="#hex" transform="translate(0,-260)"/>
+    <use href="#hex" transform="translate(-185,-130)"/>
+    <use href="#hex" transform="translate(185,-130)"/>
+    <use href="#hex" transform="translate(-185,130)"/>
+    <use href="#hex" transform="translate(185,130)"/>
+    <use href="#hex" transform="translate(0,260)"/>
+    <use href="#hexFill" transform="translate(0,0)"/>
+
+    <g font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#ffedd5" text-anchor="middle">
+      <text x="0" y="-256">AWS</text>
+      <text x="-185" y="-126">Route 53</text>
+      <text x="185" y="-126">EIP</text>
+      <text x="-185" y="134">EC2</text>
+      <text x="185" y="134">IAM</text>
+      <text x="0" y="264">S3 + DDB</text>
+      <text x="0" y="6" font-size="18" fill="#7c2d12">MCP</text>
+    </g>
+  </g>
+
+  <g font-family="Helvetica, Arial, sans-serif" fill="#ffedd5">
+    <text x="110" y="940" font-size="72" font-weight="700" letter-spacing="6">MCP INFRA</text>
+    <text x="110" y="982" font-size="22" font-weight="300" letter-spacing="7" fill="#ff9900">TERRAGRUNT  ·  AWS  ·  IAC</text>
+  </g>
+</svg>

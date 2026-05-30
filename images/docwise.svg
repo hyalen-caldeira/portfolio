@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1830"/>
+      <stop offset="1" stop-color="#050a18"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hubGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ede9fe"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </radialGradient>
+    <g id="doc">
+      <rect width="44" height="56" rx="3" fill="#13203d" stroke="#a78bfa" stroke-width="1.6"/>
+      <line x1="7" y1="13" x2="37" y2="13" stroke="#a78bfa" stroke-width="1.3"/>
+      <line x1="7" y1="22" x2="32" y2="22" stroke="#a78bfa" stroke-width="1.3"/>
+      <line x1="7" y1="31" x2="37" y2="31" stroke="#a78bfa" stroke-width="1.3"/>
+      <line x1="7" y1="40" x2="28" y2="40" stroke="#a78bfa" stroke-width="1.3"/>
+      <line x1="7" y1="49" x2="34" y2="49" stroke="#a78bfa" stroke-width="1.3"/>
+    </g>
+  </defs>
+
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <g stroke="#a78bfa" stroke-width="0.5" opacity="0.08">
+    <path d="M0 256H1536M0 512H1536M0 768H1536"/>
+    <path d="M256 0V1024M512 0V1024M768 0V1024M1024 0V1024M1280 0V1024"/>
+  </g>
+
+  <g font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14" fill="#a78bfa" opacity="0.32">
+    <text x="60" y="170">def ingest(url):</text>
+    <text x="60" y="198">    chunks = split(text)</text>
+    <text x="60" y="226">    vecs   = embed(chunks)</text>
+    <text x="60" y="254">    store.upsert(vecs)</text>
+    <text x="60" y="306">retrieval = (</text>
+    <text x="60" y="334">    dense + sparse</text>
+    <text x="60" y="362">      + rerank</text>
+    <text x="60" y="390">)</text>
+    <text x="60" y="442">Chroma  →  Pinecone</text>
+    <text x="60" y="470">1536d  ·  cosine</text>
+    <text x="60" y="522">LangChain</text>
+    <text x="60" y="550">LangSmith</text>
+    <text x="60" y="578">GPT-4o-mini</text>
+  </g>
+
+  <g transform="translate(1080,470)">
+    <circle cx="0" cy="0" r="220" fill="url(#halo)"/>
+
+    <g stroke="#a78bfa" stroke-width="1.6" opacity="0.55">
+      <line x1="0" y1="0" x2="-260" y2="-190"/>
+      <line x1="0" y1="0" x2="260" y2="-190"/>
+      <line x1="0" y1="0" x2="-260" y2="190"/>
+      <line x1="0" y1="0" x2="260" y2="190"/>
+      <line x1="0" y1="0" x2="-340" y2="0"/>
+      <line x1="0" y1="0" x2="340" y2="0"/>
+      <line x1="0" y1="0" x2="0" y2="-310"/>
+      <line x1="0" y1="0" x2="0" y2="290"/>
+    </g>
+
+    <use href="#doc" transform="translate(-282,-218)"/>
+    <use href="#doc" transform="translate(238,-218)"/>
+    <use href="#doc" transform="translate(-282,162)"/>
+    <use href="#doc" transform="translate(238,162)"/>
+    <use href="#doc" transform="translate(-22,-338)"/>
+    <use href="#doc" transform="translate(-22,262)"/>
+    <use href="#doc" transform="translate(-362,-28)"/>
+    <use href="#doc" transform="translate(318,-28)"/>
+
+    <circle cx="0" cy="0" r="58" fill="url(#hubGrad)"/>
+    <circle cx="0" cy="0" r="32" fill="#ede9fe"/>
+    <circle cx="0" cy="0" r="14" fill="#7c3aed"/>
+  </g>
+
+  <g font-family="Helvetica, Arial, sans-serif" fill="#ede9fe">
+    <text x="110" y="940" font-size="72" font-weight="700" letter-spacing="6">DOCWISE</text>
+    <text x="110" y="982" font-size="22" font-weight="300" letter-spacing="7" fill="#a78bfa">RAG  ·  DOCUMENTATION ASSISTANT</text>
+  </g>
+</svg>

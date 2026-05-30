@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1830"/>
+      <stop offset="1" stop-color="#050a18"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#10b981" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hubGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#d1fae5"/>
+      <stop offset="1" stop-color="#047857"/>
+    </radialGradient>
+    <g id="astNode">
+      <circle r="22" fill="#13203d" stroke="#10b981" stroke-width="2"/>
+      <circle r="6" fill="#6ee7b7"/>
+    </g>
+  </defs>
+
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <g stroke="#10b981" stroke-width="0.5" opacity="0.08">
+    <path d="M0 256H1536M0 512H1536M0 768H1536"/>
+    <path d="M256 0V1024M512 0V1024M768 0V1024M1024 0V1024M1280 0V1024"/>
+  </g>
+
+  <g font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14" fill="#10b981" opacity="0.34">
+    <text x="60" y="160">IDENTIFICATION DIVISION.</text>
+    <text x="60" y="188">PROGRAM-ID. LEGACY-CORE.</text>
+    <text x="60" y="216">DATA DIVISION.</text>
+    <text x="60" y="244">  COPY CUSTOMER-REC.</text>
+    <text x="60" y="272">  01 WS-TOTAL  PIC 9(7)V99.</text>
+    <text x="60" y="300">PROCEDURE DIVISION.</text>
+    <text x="60" y="328">  PERFORM READ-INPUT.</text>
+    <text x="60" y="356">  IF WS-FLAG = 'Y' THEN</text>
+    <text x="60" y="384">     CALL 'SUB-CALC' USING</text>
+    <text x="60" y="412">       WS-TOTAL, WS-RATE</text>
+    <text x="60" y="440">  END-IF.</text>
+    <text x="60" y="492">AST  ·  ASG  ·  CFG</text>
+    <text x="60" y="520">DFG  ·  PDG  ·  call-graph</text>
+    <text x="60" y="572">MCP  +  LangGraph</text>
+    <text x="60" y="600">FastMCP 2.0  ·  Python</text>
+  </g>
+
+  <g transform="translate(1080,460)">
+    <circle cx="0" cy="0" r="280" fill="url(#halo)"/>
+
+    <g stroke="#10b981" stroke-width="1.6" opacity="0.7" fill="none">
+      <line x1="0" y1="-240" x2="-160" y2="-120"/>
+      <line x1="0" y1="-240" x2="160" y2="-120"/>
+      <line x1="-160" y1="-120" x2="-260" y2="0"/>
+      <line x1="-160" y1="-120" x2="-80" y2="0"/>
+      <line x1="160" y1="-120" x2="80" y2="0"/>
+      <line x1="160" y1="-120" x2="260" y2="0"/>
+      <line x1="-260" y1="0" x2="-300" y2="140"/>
+      <line x1="-260" y1="0" x2="-180" y2="140"/>
+      <line x1="-80" y1="0" x2="-100" y2="140"/>
+      <line x1="-80" y1="0" x2="0" y2="140"/>
+      <line x1="80" y1="0" x2="0" y2="140"/>
+      <line x1="80" y1="0" x2="100" y2="140"/>
+      <line x1="260" y1="0" x2="180" y2="140"/>
+      <line x1="260" y1="0" x2="300" y2="140"/>
+      <path d="M -300 140 Q -150 240 0 140" stroke-dasharray="6 4" opacity="0.5"/>
+      <path d="M 0 140 Q 150 240 300 140" stroke-dasharray="6 4" opacity="0.5"/>
+    </g>
+
+    <use href="#astNode" transform="translate(-160,-120)"/>
+    <use href="#astNode" transform="translate(160,-120)"/>
+    <use href="#astNode" transform="translate(-260,0)"/>
+    <use href="#astNode" transform="translate(-80,0)"/>
+    <use href="#astNode" transform="translate(80,0)"/>
+    <use href="#astNode" transform="translate(260,0)"/>
+    <use href="#astNode" transform="translate(-300,140)"/>
+    <use href="#astNode" transform="translate(-180,140)"/>
+    <use href="#astNode" transform="translate(-100,140)"/>
+    <use href="#astNode" transform="translate(0,140)"/>
+    <use href="#astNode" transform="translate(100,140)"/>
+    <use href="#astNode" transform="translate(180,140)"/>
+    <use href="#astNode" transform="translate(300,140)"/>
+
+    <circle cx="0" cy="-240" r="52" fill="url(#hubGrad)"/>
+    <circle cx="0" cy="-240" r="28" fill="#d1fae5"/>
+    <text x="0" y="-232" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#064e3b">AST</text>
+  </g>
+
+  <g font-family="Helvetica, Arial, sans-serif" fill="#d1fae5">
+    <text x="110" y="940" font-size="72" font-weight="700" letter-spacing="6">COBOL AI</text>
+    <text x="110" y="982" font-size="22" font-weight="300" letter-spacing="7" fill="#10b981">REVERSE ENGINEERING PLATFORM</text>
+  </g>
+</svg>

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1830"/>
+      <stop offset="1" stop-color="#050a18"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pageGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#13203d"/>
+      <stop offset="1" stop-color="#0a1428"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+
+  <g stroke="#06b6d4" stroke-width="0.5" opacity="0.08">
+    <path d="M0 256H1536M0 512H1536M0 768H1536"/>
+    <path d="M256 0V1024M512 0V1024M768 0V1024M1024 0V1024M1280 0V1024"/>
+  </g>
+
+  <g font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14" fill="#06b6d4" opacity="0.34">
+    <text x="60" y="160">Hyalen M. Caldeira</text>
+    <text x="60" y="188">Senior AI Engineer</text>
+    <text x="60" y="216">Dublin, OH  ·  USA</text>
+    <text x="60" y="268">Experience  ·  15+ years</text>
+    <text x="60" y="296">Forward Deployed Engineer</text>
+    <text x="60" y="348">Skills:</text>
+    <text x="60" y="376">  LangChain  ·  LangGraph</text>
+    <text x="60" y="404">  MCP  ·  RAG  ·  Agents</text>
+    <text x="60" y="432">  Python  ·  Java  ·  TS</text>
+    <text x="60" y="484">Cloud:</text>
+    <text x="60" y="512">  AWS  ·  Kubernetes</text>
+    <text x="60" y="540">  Terraform  ·  Helm</text>
+    <text x="60" y="592">Certs  ·  FDE  ·  CKAD  ·  AWS</text>
+  </g>
+
+  <g transform="translate(1060,460)">
+    <circle cx="0" cy="0" r="320" fill="url(#halo)"/>
+
+    <!-- main page -->
+    <g>
+      <rect x="-240" y="-340" width="480" height="660" rx="10" fill="url(#pageGrad)" stroke="#06b6d4" stroke-width="2.5"/>
+
+      <!-- header band -->
+      <rect x="-240" y="-340" width="480" height="80" fill="#0e7490" opacity="0.7"/>
+      <rect x="-220" y="-322" width="200" height="14" rx="2" fill="#67e8f9"/>
+      <rect x="-220" y="-300" width="140" height="10" rx="2" fill="#67e8f9" opacity="0.7"/>
+
+      <!-- avatar circle on header -->
+      <circle cx="190" cy="-300" r="28" fill="#13203d" stroke="#67e8f9" stroke-width="2"/>
+      <circle cx="190" cy="-308" r="8" fill="#67e8f9"/>
+      <path d="M 170 -286 Q 190 -272 210 -286" stroke="#67e8f9" stroke-width="2" fill="none"/>
+
+      <!-- section: experience -->
+      <rect x="-220" y="-230" width="120" height="10" rx="2" fill="#06b6d4"/>
+      <line x1="-220" y1="-208" x2="220" y2="-208" stroke="#06b6d4" stroke-width="1" opacity="0.4"/>
+      <rect x="-220" y="-194" width="320" height="8" rx="1" fill="#06b6d4" opacity="0.7"/>
+      <rect x="-220" y="-180" width="270" height="8" rx="1" fill="#06b6d4" opacity="0.5"/>
+      <rect x="-220" y="-166" width="300" height="8" rx="1" fill="#06b6d4" opacity="0.5"/>
+
+      <rect x="-220" y="-138" width="320" height="8" rx="1" fill="#06b6d4" opacity="0.7"/>
+      <rect x="-220" y="-124" width="270" height="8" rx="1" fill="#06b6d4" opacity="0.5"/>
+      <rect x="-220" y="-110" width="240" height="8" rx="1" fill="#06b6d4" opacity="0.5"/>
+
+      <!-- section: skills -->
+      <rect x="-220" y="-70" width="90" height="10" rx="2" fill="#06b6d4"/>
+      <line x1="-220" y1="-48" x2="220" y2="-48" stroke="#06b6d4" stroke-width="1" opacity="0.4"/>
+      <g fill="#06b6d4" opacity="0.55">
+        <rect x="-220" y="-34" width="68" height="20" rx="10"/>
+        <rect x="-144" y="-34" width="86" height="20" rx="10"/>
+        <rect x="-50" y="-34" width="60" height="20" rx="10"/>
+        <rect x="18" y="-34" width="74" height="20" rx="10"/>
+        <rect x="100" y="-34" width="64" height="20" rx="10"/>
+        <rect x="-220" y="-6" width="80" height="20" rx="10"/>
+        <rect x="-132" y="-6" width="62" height="20" rx="10"/>
+        <rect x="-62" y="-6" width="92" height="20" rx="10"/>
+        <rect x="38" y="-6" width="72" height="20" rx="10"/>
+      </g>
+
+      <!-- section: certs -->
+      <rect x="-220" y="60" width="110" height="10" rx="2" fill="#06b6d4"/>
+      <line x1="-220" y1="82" x2="220" y2="82" stroke="#06b6d4" stroke-width="1" opacity="0.4"/>
+      <g>
+        <circle cx="-200" cy="106" r="14" fill="#06b6d4" opacity="0.7"/>
+        <circle cx="-160" cy="106" r="14" fill="#06b6d4" opacity="0.7"/>
+        <circle cx="-120" cy="106" r="14" fill="#06b6d4" opacity="0.7"/>
+        <circle cx="-80" cy="106" r="14" fill="#06b6d4" opacity="0.7"/>
+        <circle cx="-40" cy="106" r="14" fill="#06b6d4" opacity="0.7"/>
+        <circle cx="0" cy="106" r="14" fill="#06b6d4" opacity="0.7"/>
+      </g>
+
+      <!-- section: education -->
+      <rect x="-220" y="156" width="140" height="10" rx="2" fill="#06b6d4"/>
+      <line x1="-220" y1="178" x2="220" y2="178" stroke="#06b6d4" stroke-width="1" opacity="0.4"/>
+      <rect x="-220" y="192" width="280" height="8" rx="1" fill="#06b6d4" opacity="0.5"/>
+      <rect x="-220" y="206" width="220" height="8" rx="1" fill="#06b6d4" opacity="0.5"/>
+      <rect x="-220" y="234" width="280" height="8" rx="1" fill="#06b6d4" opacity="0.5"/>
+      <rect x="-220" y="248" width="200" height="8" rx="1" fill="#06b6d4" opacity="0.5"/>
+    </g>
+
+    <!-- floating accent badges -->
+    <g>
+      <circle cx="-300" cy="-180" r="22" fill="#0e7490" stroke="#67e8f9" stroke-width="2"/>
+      <text x="-300" y="-174" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#cffafe">CV</text>
+      <circle cx="320" cy="40" r="22" fill="#0e7490" stroke="#67e8f9" stroke-width="2"/>
+      <text x="320" y="46" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#cffafe">AI</text>
+      <circle cx="-310" cy="220" r="22" fill="#0e7490" stroke="#67e8f9" stroke-width="2"/>
+      <text x="-310" y="226" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#cffafe">FDE</text>
+    </g>
+  </g>
+
+  <g font-family="Helvetica, Arial, sans-serif" fill="#cffafe">
+    <text x="110" y="940" font-size="72" font-weight="700" letter-spacing="6">RESUME</text>
+    <text x="110" y="982" font-size="22" font-weight="300" letter-spacing="7" fill="#06b6d4">INTERACTIVE  ·  ONLINE  ·  CV</text>
+  </g>
+</svg>
